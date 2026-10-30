@@ -1,0 +1,6 @@
+{
+  "name": "Dead Yard: Tactical Survival FPS",
+  "description": "High-intensity first-person survival shooter featuring 6 battlefields, 6 tactical weapons, wave & elimination modes, adaptive enemy AI, and customizable HUD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
