@@ -43,7 +43,8 @@ import { EnemyActor, PickupItem, createEnemyActor, createPickupCrate, findCoverS
 export function initDeadYardEngine(mountHost: HTMLElement): () => void {
   const $ = (id: string) => document.getElementById(id)!;
   const isTouch =
-    (window.matchMedia && matchMedia('(pointer:coarse)').matches) || 'ontouchstart' in window;
+    (typeof window.matchMedia === 'function' && window.matchMedia('(pointer:coarse)').matches) ||
+    'ontouchstart' in window;
   if (isTouch) document.body.classList.add('touch');
 
   // Software WebGL detection per Three.js skill
